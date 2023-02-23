@@ -9,6 +9,7 @@
 body
 {
     font-family: 'Manrope', sans-serif;
+    padding-top: 70px;
 }
 
 header
@@ -37,6 +38,20 @@ li, a
     color: aqua;
     text-decoration: none;
     list-style-type: none;
+}
+
+.nav-link
+{
+    font-weight: 300;
+    font-size: 20px;
+    color: aqua;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.navbar .nav-link.active
+{
+    color: white;
 }
 
 .logo
@@ -71,15 +86,24 @@ li, a
     height: 100%;
 }
 
+.carouselImg
+{
+    object-fit: cover
+}
+
+.searchBar
+{
+    background-color: black;
+}
+
 .search
 {
     display: flex;
     flex-flow: row nowrap;
     /* margin: 0px 5%; */
-    padding: 0px 5%;
+    /* padding: 0px 5%; */
     justify-content: space-between;
     text-align: center;
-    background-color: black;
 }
 
 footer
