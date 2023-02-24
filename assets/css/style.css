@@ -210,6 +210,28 @@ footer
     object-fit: fill;
 }
 
+.storeGamesSection
+{
+    margin: 5%;
+}
+
+.storeGamesContainer
+{
+    justify-content: space-evenly;
+}
+
+.storeCard
+{
+    height: 10%;
+    
+}
+
+.storeCardImage
+{
+    height: 60%;
+    object-fit: fill;
+}
+
 .value
 {
     color: greenyellow;
