@@ -214,11 +214,12 @@ footer
 .storeGamesContainer
 {
     justify-content: space-evenly;
+    align-items: start;
 }
 
 .storeCardImage
 {
-    height: 60%;
+    height: 30rem;
     object-fit: fill;
 }
 
@@ -305,8 +306,15 @@ footer
         height: 70px;
         width: 70px;
     }
+
+    .storeCardImage
+    {
+        height: 15rem;
+        object-fit: fill;
+    }
 }
 
-@media (min-width: 769px)
+@media (min-width: 769px) and (min-width: 769px)
 {
+
 }
