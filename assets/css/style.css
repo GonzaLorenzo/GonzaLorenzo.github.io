@@ -9,7 +9,7 @@
 body
 {
     font-family: 'Manrope', sans-serif;
-    padding-top: 70px;
+    padding-top: 165px;
 }
 
 header
@@ -56,8 +56,8 @@ li, a
 
 .logo
 {
-    width: 10%;
-    height: 10%;
+    width: 140px;
+    height: 140px;
     cursor: pointer;
 }
 
@@ -297,4 +297,22 @@ footer
 {
     border: 1px solid aqua;
     border-radius: 5px;
+}
+
+@media (max-width: 768px)
+{
+    body
+    {
+        padding-top: 95px;
+    }
+
+    .logo
+    {
+        height: 70px;
+        width: 70px;
+    }
+}
+
+@media (min-width: 769px)
+{
 }
