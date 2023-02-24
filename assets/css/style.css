@@ -109,10 +109,6 @@ li, a
 
 footer
 {
-    /* display: flex;
-    flex-flow: column nowrap;
-    align-items: center; */
-    padding: 5px 5%;
     background-color: black;
 }
 
