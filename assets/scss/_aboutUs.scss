@@ -1,0 +1,19 @@
+.aboutUs
+{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	margin: 5%;
+	img
+    {
+		height: 35rem;
+		width: 35rem;
+		vertical-align: middle;
+	}
+	p
+    {
+		text-align: justify;
+		line-height: 1.4rem;
+	}
+}

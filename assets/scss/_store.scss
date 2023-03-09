@@ -1,0 +1,51 @@
+.storeCarouselContainer
+{
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: center;
+	background-color: $background-color_2;
+	img
+    {
+		width: 90%;
+		object-fit: fill;
+	}
+}
+
+.storeCarouselInfo
+{
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+	padding: 2% 0%;
+}
+
+.carouselImg
+{
+	height: 40vw;
+	object-fit: fill;
+}
+
+
+.storeGamesSection
+{
+	margin: 5%;
+}
+
+.storeGamesContainer
+{
+	justify-content: space-evenly;
+	align-items: start;
+}
+
+.storeCardImage 
+{
+	height: 30rem;
+	object-fit: fill;
+}
+
+.value
+{
+	color: $color_3;
+}
