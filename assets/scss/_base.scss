@@ -69,16 +69,21 @@ a
 {
 	font-weight: 300;
 	font-size: 20px;
-	color: $color_1;
+	color: $color_2;
 	text-decoration: none;
 	list-style-type: none;
+
+	&:hover
+	{
+		color: $color_1;
+	}
 }
 
 .navbar
 {
 	.nav-link.active
     {
-		color: $color_2;
+		color: $color_1;
 	}
 }
 
