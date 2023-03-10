@@ -1,17 +1,5 @@
 @mixin anchors
 {
-    font-weight: 300;
-	font-size: 20px;
-	color: $color_1;
-	text-decoration: none;
-	list-style-type: none;
-}
-
-@mixin listItems
-{
-    font-weight: 300;
-	font-size: 20px;
-	color: $color_1;
 	text-decoration: none;
 	list-style-type: none;
 }
@@ -55,12 +43,12 @@ header
 	cursor: pointer;
 }
 
-li
+a
 {
-	@include listItems;
+	@include anchors;
 }
 
-a
+li
 {
 	@include anchors;
 }
@@ -77,6 +65,11 @@ a
 	{
 		color: $color_1;
 	}
+
+	&:focus
+	{
+		color: $color_1;
+	}
 }
 
 .navbar
@@ -84,6 +77,7 @@ a
 	.nav-link.active
     {
 		color: $color_1;
+		border-bottom: 2px solid $color_1;
 	}
 }
 
@@ -107,29 +101,6 @@ a
 footer
 {
 	background-color: $background-color_1;
-}
-
-.footerLinks
-{
-	display: flex;
-	flex-flow: column nowrap;
-	align-items: center;
-	li
-    {
-		text-align: center;
-		width: 150px;
-		padding: 10px 20px;
-		display: inline-block;
-	}
-}
-
-.footerNav-link
-{
-	font-weight: 300;
-	font-size: 20px;
-	color: $color_1;
-	text-decoration: none;
-	list-style-type: none;
 }
 
 //Borrar despues de actualizar contact.
