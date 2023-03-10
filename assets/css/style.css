@@ -150,7 +150,6 @@ footer {
 
 .newsArticleContainer {
   justify-content: space-evenly;
-  align-items: start;
 }
 
 .articleContainer {
@@ -158,13 +157,14 @@ footer {
   flex-direction: column;
   position: relative;
   min-height: 300px;
-  max-width: 25%;
 }
 
 .articleThumbnail {
   position: absolute;
   top: 0;
   right: 0;
+  padding-right: 15%;
+  padding-left: 15%;
 }
 .articleThumbnail img {
   height: 320px;
@@ -172,12 +172,13 @@ footer {
 }
 
 .articleDetails {
+  background-color: white;
   display: flex;
   flex-flow: column nowrap;
   flex-grow: 1;
   align-content: center;
   justify-content: center;
-  background-color: white;
+  padding: 16px 16px 16px 0;
   width: 45%;
   box-shadow: 2px 4px 5px -3px;
   position: relative;
