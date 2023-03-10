@@ -1,34 +1,67 @@
-.news
+.newsArticlesSection
+{
+	margin: 5%;
+}
+
+.newsArticleContainer
+{
+	justify-content: space-evenly;
+	align-items: start;
+}
+
+.articleContainer
 {
 	display: flex;
-	flex-flow: column nowrap;
-	align-items: center;
-	margin: 100px 100px;
-	li
-    {
-		display: block;
-		padding: 10px 0px;
+	flex-direction: column;
+	position: relative;
+	min-height: 300px;
+	max-width: 25%;
+}
+
+.articleThumbnail
+{
+  	position: absolute;
+  	top: 0;
+  	right: 0;
+
+	img
+	{
+		height: 320px;
+		width: 350px;
 	}
 }
 
-.newsContainer
+.articleDetails
 {
 	display: flex;
-	flex-flow: row nowrap;
-	align-items: center;
-	width: 720px;
-	height: 360px;
-	padding: 20px 20px;
-	background-color: $background-color_3;
-	img
-    {
-		padding: 0px 20px;
-		width: 360px;
-		height: 360px;
+	flex-flow: column nowrap;
+	flex-grow: 1;
+	align-content: center;
+	justify-content: center;
+	background-color: $color_2;
+	width: 45%;
+	box-shadow: 2px 4px 5px -3px;
+	position: relative;
+}
+
+.articleTitle
+{
+	color: black;
+	font-size: large;
+	font-weight: 700;
+	line-height: 1.1;
+
+	&:hover
+	{
+		color: $color_1;
+		text-decoration: underline;
 	}
-	div
-    {
-		align-self: flex-start;
-		padding: 0px 20px;
-	}
+}
+
+.articleSummary
+{
+	color: black;
+	font-size: medium;
+	font-weight: 300;
+	line-height: 1.1;
 }

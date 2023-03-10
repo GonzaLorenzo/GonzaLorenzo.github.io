@@ -30,7 +30,7 @@
                         <a class="nav-link active" href="news.html">News</a>
                         <a class="nav-link" href="about-us.html">About us</a>
                         <a class="nav-link" href="contact.html">Contact</a>
-                        <a class="nav-link" href=""> <img class="headerCart" src="../img/Cart.png" alt="Cart"> </a>
+                        <a class="nav-link" href=""> <img class="headerCart" src="../img/bag.png" alt="Cart"> </a>
                     </div>
                 </div>
             </div>
@@ -47,38 +47,81 @@
             </div>
         </section>
 
-        <div class="news">
-            <ul>
-                <li>
-                    <div class="newsContainer">
-                        <img src="../img/article-img.jpg" alt="article">
-                        <div>
-                            <h3 class="heading">Article Title</h3>
-                            <br>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est impedit suscipit aliquid obcaecati ea, fugiat laboriosam quas explicabo natus! Possimus quod libero veritatis aperiam deserunt officia ut voluptatem repudiandae beatae!</p>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="storeCarouselContainer">
+                        <img src="../img/csgo2article.jpeg" class="carouselImg" alt="Huge CS:GO 2 Leak Found In Latest Dota 2 Update">
+                        <div class="carousel-caption d-flex flex-column align-items-start py-2 w-25 bg-black">
+                            <h5>Huge CS:GO 2 Leak Found In Latest Dota 2 Update</h5>
+                            <p class="d-none d-sm-flex">The gaming world has been buzzing for some time about a breakthrough in the shooter world of CS:GO. Now a big new leak about CSGO 2 has appeared.</p>
                         </div>
                     </div>
-                </li>
-                <li>
-                    <div class="newsContainer">
-                        <img src="../img/article-img.jpg" alt="article">
-                        <div>
-                            <h3 class="heading">Article Title</h3>
-                            <br>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est impedit suscipit aliquid obcaecati ea, fugiat laboriosam quas explicabo natus! Possimus quod libero veritatis aperiam deserunt officia ut voluptatem repudiandae beatae!</p>
-                        </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="newsArticlesSection">
+            <h2 class="colorHeading">News</h2>
+            <div class="newsArticleContainer row my-2 ">
+                <div class="articleContainer col-xl-6 col-sm-12">
+                    <div class="articleThumbnail">
+                        <img src="../img/csgo2article.jpeg" alt="">
                     </div>
-                </li>
-            </ul>
+                    <div class="articleDetails">
+                        <a class="articleTitle" href="#">Huge CS:GO 2 Leak Found In Latest Dota 2 Update</a>
+                        <!-- <p class="articleTitle">Huge CS:GO 2 Leak Found In Latest Dota 2 Update</p> -->
+                        <p class="articleSummary my-4">The gaming world has been buzzing for some time about a breakthrough in the shooter world of CS:GO. Now a big new leak about CSGO 2 has appeared.</p>
+                    </div>
+                </div>
+                <div class="articleContainer col-xl-6 col-sm-12">
+                    <div class="articleThumbnail">
+                        <img src="../img/csgo2article.jpeg" alt="">
+                    </div>
+                    <div class="articleDetails">
+                        <a class="articleTitle" href="#">Huge CS:GO 2 Leak Found In Latest Dota 2 Update</a>
+                        <!-- <p class="articleTitle">Huge CS:GO 2 Leak Found In Latest Dota 2 Update</p> -->
+                        <p class="articleSummary my-4">The gaming world has been buzzing for some time about a breakthrough in the shooter world of CS:GO. Now a big new leak about CSGO 2 has appeared.</p>
+                    </div>
+                </div>
+                <div class="articleContainer col-xl-6 col-sm-12">
+                    <div class="articleThumbnail">
+                        <img src="../img/csgo2article.jpeg" alt="">
+                    </div>
+                    <div class="articleDetails">
+                        <a class="articleTitle" href="#">Huge CS:GO 2 Leak Found In Latest Dota 2 Update</a>
+                        <!-- <p class="articleTitle">Huge CS:GO 2 Leak Found In Latest Dota 2 Update</p> -->
+                        <p class="articleSummary my-4">The gaming world has been buzzing for some time about a breakthrough in the shooter world of CS:GO. Now a big new leak about CSGO 2 has appeared.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
     <footer class="py-3">
         <ul class="nav justify-content-center">
-            <li class="nav-item"><a href="https://www.facebook.com/" target="_blank" class="nav-link px-2">Facebook</a></li>
-            <li class="nav-item"><a href="https://twitter.com/" target="_blank" class="nav-link px-2">Twitter</a></li>
-            <li class="nav-item"><a href="https://www.instagram.com/" target="_blank" class="nav-link px-2">Instagram</a></li>
-            <li class="nav-item"><a href="https://www.youtube.com/" target="_blank" class="nav-link px-2">Youtube</a></li>
+            <li class="nav-item"><a href="https://www.facebook.com/" target="_blank" class="nav-link px-2"><img class="footerIcon" src="../img/facebook.png" alt="Our Facebook account"></a></li>
+            <li class="nav-item"><a href="https://twitter.com/" target="_blank" class="nav-link px-2"><img class="footerIcon" src="../img/twitter.png" alt="Our Twitter account"></a></li>
+            <li class="nav-item"><a href="https://www.instagram.com/" target="_blank" class="nav-link px-2"><img class="footerIcon" src="../img/instagram.png" alt="Our Instagram account"></a></li>
+            <li class="nav-item"><a href="https://www.youtube.com/" target="_blank" class="nav-link px-2"><img class="footerIcon" src="../img/youtube.png" alt="Our Youtube account"></a></li>
         </ul>
         <ul class="nav justify-content-center">
             <li class="nav-item"><a href="#" target="_blank" class="nav-link px-2">Privacy Policy</a></li>

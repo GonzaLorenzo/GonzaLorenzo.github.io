@@ -77,6 +77,11 @@ footer {
   background-color: black;
 }
 
+.footerIcon {
+  height: 50px;
+  width: 50px;
+}
+
 #mainIndexBanner img {
   display: block;
   width: 100%;
@@ -139,34 +144,61 @@ footer {
   color: greenyellow;
 }
 
-.news {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  margin: 100px 100px;
-}
-.news li {
-  display: block;
-  padding: 10px 0px;
+.newsArticlesSection {
+  margin: 5%;
 }
 
-.newsContainer {
+.newsArticleContainer {
+  justify-content: space-evenly;
+  align-items: start;
+}
+
+.articleContainer {
   display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  width: 720px;
-  height: 360px;
-  padding: 20px 20px;
-  background-color: grey;
+  flex-direction: column;
+  position: relative;
+  min-height: 300px;
+  max-width: 25%;
 }
-.newsContainer img {
-  padding: 0px 20px;
-  width: 360px;
-  height: 360px;
+
+.articleThumbnail {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
-.newsContainer div {
-  align-self: flex-start;
-  padding: 0px 20px;
+.articleThumbnail img {
+  height: 320px;
+  width: 350px;
+}
+
+.articleDetails {
+  display: flex;
+  flex-flow: column nowrap;
+  flex-grow: 1;
+  align-content: center;
+  justify-content: center;
+  background-color: white;
+  width: 45%;
+  box-shadow: 2px 4px 5px -3px;
+  position: relative;
+}
+
+.articleTitle {
+  color: black;
+  font-size: large;
+  font-weight: 700;
+  line-height: 1.1;
+}
+.articleTitle:hover {
+  color: aqua;
+  text-decoration: underline;
+}
+
+.articleSummary {
+  color: black;
+  font-size: medium;
+  font-weight: 300;
+  line-height: 1.1;
 }
 
 .aboutUs {
@@ -242,6 +274,9 @@ footer {
     height: 70px;
     width: 70px;
   }
+  .storeGamesSection {
+    margin: 5% 25%;
+  }
   .storeCardImage {
     height: 15rem;
     object-fit: fill;
@@ -253,6 +288,10 @@ footer {
   }
   .aboutUs p {
     font-size: medium;
+  }
+  .footerIcon {
+    height: 30px;
+    width: 30px;
   }
 }
 
