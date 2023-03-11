@@ -1,3 +1,18 @@
+@mixin newsArticleTitle
+{
+	font-size: large;
+	font-weight: 700;
+	line-height: 1.1;
+	text-align: center;
+	font-size: 1.5rem;
+
+	&:hover
+	{
+		color: $color_1;
+		text-decoration: underline;
+	}
+}
+
 .newsArticlesSection
 {
 	margin: 5%;
@@ -41,16 +56,8 @@
 .articleTitle
 {
 	color: black;
-	font-size: large;
-	font-weight: 700;
-	line-height: 1.1;
-	text-align: center;
 
-	&:hover
-	{
-		color: $color_1;
-		text-decoration: underline;
-	}
+	@include newsArticleTitle;
 }
 
 .articleSummary
@@ -60,4 +67,11 @@
 	font-weight: 300;
 	line-height: 1.1;
 	text-align: center;
+}
+
+.newsCarouselTitle
+{
+	color: $color_2;
+
+	@include newsArticleTitle;
 }

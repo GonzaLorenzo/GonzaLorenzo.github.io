@@ -10,6 +10,13 @@
   font-weight: 700;
 }
 
+.colorTitle {
+  color: aqua;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -185,6 +192,7 @@ footer {
   font-weight: 700;
   line-height: 1.1;
   text-align: center;
+  font-size: 1.5rem;
 }
 .articleTitle:hover {
   color: aqua;
@@ -197,6 +205,19 @@ footer {
   font-weight: 300;
   line-height: 1.1;
   text-align: center;
+}
+
+.newsCarouselTitle {
+  color: white;
+  font-size: large;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.newsCarouselTitle:hover {
+  color: aqua;
+  text-decoration: underline;
 }
 
 .aboutUs {
@@ -247,6 +268,9 @@ footer {
   }
 }
 @media (max-width: 992px) {
+  .articleTitle {
+    font-size: medium;
+  }
   .aboutUs {
     flex-flow: column nowrap;
     margin: 0 5%;
@@ -264,6 +288,12 @@ footer {
   }
   .colorHeading {
     font-size: 1.5rem;
+  }
+  .articleTitle {
+    font-size: 1rem;
+  }
+  .newsCarouselTitle {
+    font-size: 1rem;
   }
   .nav-link {
     font-size: 1rem;
@@ -293,6 +323,11 @@ footer {
   .footerIcon {
     height: 30px;
     width: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .newsCarouselTitle {
+    font-size: 0.7rem;
   }
 }
 

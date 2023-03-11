@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;700&display=swap');
 
+@mixin colorHeadings
+{
+	color: $color_1;
+	text-align: center;
+	font-weight: 700;
+}
+
 .heading
 {
 	text-align: center;
@@ -7,7 +14,11 @@
 }
 .colorHeading
 {
-	color: $color_1;
-	text-align: center;
-	font-weight: 700;
+	@include colorHeadings;
+}
+
+.colorTitle
+{
+	@include colorHeadings;
+	margin-bottom: 25px;
 }
