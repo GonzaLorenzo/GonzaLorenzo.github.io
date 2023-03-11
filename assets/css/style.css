@@ -245,14 +245,36 @@ footer {
 
 .contact {
   display: flex;
-  margin: 100px 100px;
+  margin: 5%;
   flex-flow: row nowrap;
   justify-content: space-evenly;
+  align-items: center;
+}
+
+.locationContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .locationMap {
   border: 1px solid aqua;
   border-radius: 5px;
+  width: 75%;
+}
+.locationMap iframe {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.formContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  min-width: 100%;
+}
+.formContainer div {
+  padding: 10px;
 }
 
 @media (max-width: 1400px) {
@@ -276,6 +298,9 @@ footer {
 @media (max-width: 992px) {
   .articleTitle {
     font-size: medium;
+  }
+  .contact {
+    flex-flow: column nowrap;
   }
   .aboutUs {
     flex-flow: column nowrap;
