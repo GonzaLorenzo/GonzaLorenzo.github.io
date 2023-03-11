@@ -3,12 +3,6 @@
 	margin: 5%;
 }
 
-.newsArticleContainer
-{
-	justify-content: space-evenly;
-	
-}
-
 .articleContainer
 {
 	display: flex;
@@ -22,12 +16,11 @@
   	position: absolute;
   	top: 0;
   	right: 0;
-	padding-right: 15%;
 	padding-left: 15%;
 	img
 	{
 		height: 320px;
-		width: 350px;
+		width: 100%;
 	}
 }
 

@@ -148,10 +148,6 @@ footer {
   margin: 5%;
 }
 
-.newsArticleContainer {
-  justify-content: space-evenly;
-}
-
 .articleContainer {
   display: flex;
   flex-direction: column;
@@ -163,12 +159,11 @@ footer {
   position: absolute;
   top: 0;
   right: 0;
-  padding-right: 15%;
   padding-left: 15%;
 }
 .articleThumbnail img {
   height: 320px;
-  width: 350px;
+  width: 100%;
 }
 
 .articleDetails {
@@ -283,6 +278,9 @@ footer {
   .storeCardImage {
     height: 15rem;
     object-fit: fill;
+  }
+  .articleThumbnail {
+    padding-right: 5%;
   }
   .aboutUs img {
     height: 15rem;
