@@ -24,6 +24,15 @@
 	flex-direction: column;
 	position: relative;
 	min-height: 300px;
+
+	&:hover .articleThumbnail
+	{
+		img
+		{
+			filter: contrast(125%);
+			box-shadow: 2px 2px 10px;
+		}
+	}
 }
 
 .articleThumbnail
@@ -36,6 +45,8 @@
 	{
 		height: 320px;
 		width: 100%;
+		filter: contrast(100%);
+		transition: all 0.4s;
 	}
 }
 
