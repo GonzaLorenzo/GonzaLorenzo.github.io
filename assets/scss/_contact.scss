@@ -1,10 +1,7 @@
 .contact
 {
-	display: flex;
-	margin: 5%;
-	flex-flow: row nowrap;
+	margin: 5% 3%;
 	justify-content: space-evenly;
-	align-items: center;
 }
 
 .locationContainer
@@ -19,7 +16,6 @@
 {
 	border: 1px solid aqua;
 	border-radius: 5px;
-	width: 75%;
 	iframe
 	{
 		max-width: 100%;
@@ -35,6 +31,6 @@
 
 	div
 	{
-		padding: 10px;
+		padding: 15px;
 	}
 }
