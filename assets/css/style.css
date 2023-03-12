@@ -90,10 +90,22 @@ footer {
 }
 
 #mainIndexBanner img {
-  display: block;
-  width: 100%;
   height: 100%;
-  object-fit: cover;
+  width: 100%;
+  object-fit: fill;
+}
+
+.indexLinks {
+  color: white;
+  font-size: large;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.indexLinks:hover {
+  color: aqua;
+  text-decoration: underline;
 }
 
 .searchBarBackground {
