@@ -87,6 +87,14 @@ footer {
 .footerIcon {
   height: 50px;
   width: 50px;
+  transition: all 0.5s;
+}
+.footerIcon:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+.footerIcon:active {
+  transform: translateY(5px);
 }
 
 #mainIndexBanner img {
@@ -116,7 +124,7 @@ footer {
   display: flex;
   flex-flow: row nowrap;
   margin: 0px 7%;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
 }
 

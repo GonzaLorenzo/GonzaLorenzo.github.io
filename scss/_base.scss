@@ -95,4 +95,15 @@ footer
 {
 	height: 50px;
 	width: 50px;
+	transition: all .5s;
+	&:hover
+	{
+		cursor:pointer;
+    	transform: translateY(-5px);
+	}
+
+	&:active
+	{
+		transform: translateY(5px);
+	}
 }
