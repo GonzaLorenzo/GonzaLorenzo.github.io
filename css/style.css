@@ -28,7 +28,7 @@ body {
 }
 
 .navBarToggler span {
-  background-image: url(../img/NavBarTogglerAqua.png);
+  background-image: url(../assets/img/NavBarTogglerAqua.png);
 }
 
 .headerCart {
@@ -98,7 +98,7 @@ footer {
 }
 
 #mainIndexBanner img {
-  height: 100%;
+  height: 35vw;
   width: 100%;
   object-fit: fill;
 }
@@ -329,6 +329,9 @@ footer {
 @media (max-width: 768px) {
   body {
     padding-top: 95px;
+  }
+  #mainIndexBanner img {
+    height: 100%;
   }
   .colorHeading {
     font-size: 1.5rem;
