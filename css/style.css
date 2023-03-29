@@ -259,8 +259,15 @@ footer {
   vertical-align: middle;
 }
 .aboutUs p {
+  font-size: larger;
   text-align: justify;
   line-height: 1.4rem;
+}
+
+.aboutUsTitle {
+  text-align: center;
+  font-weight: 700;
+  margin: 1rem;
 }
 
 .contact {
