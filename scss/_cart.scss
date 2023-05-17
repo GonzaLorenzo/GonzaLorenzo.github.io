@@ -1,0 +1,26 @@
+.cartContainer
+{
+	margin: 5%;
+}
+
+.cartItemsContainer
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cartItem
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    //padding: ;
+    img
+	{
+		height: 320px;
+		width: 320px;
+    }
+}

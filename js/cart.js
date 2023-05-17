@@ -19,10 +19,10 @@ window.addEventListener('load', function()
     for (const game of Games)
     {
         let gameContainer = document.createElement("li");
-
+        gameContainer.className = "cartItem";
         gameContainer.innerHTML =  `<img src=${game.image}></img>
                                     <h3> ${game.name} </h3>
-                                    <p class="value"> ${"$ " + game.price} </p>`;
+                                    <h4 class="value"> ${"$ " + game.price} </h4>`;
         cartContainer.append (gameContainer);
     }
 })
