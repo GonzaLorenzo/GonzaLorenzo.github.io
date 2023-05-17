@@ -1,22 +1,13 @@
-function Game(name, price, image)
-{
-    this.name = name;
-    this.price = price;
-    this.image = image;
-}
-
-const Games = [
-    ishin = new Game("Like a Dragon: Ishin!", 60, "../assets/img/Ishin.webp"),
-    borderlands3 = new Game("Borderlands 3", 50, "../assets/img/Borderlands3.jpg"),
-    psychonauts2 = new Game("Psychonauts 2", 35, "../assets/img/Psychonauts2.jpg"),
-    cuphead = new Game("Cuphead", 15, "../assets/img/CupheadY.jpg")
-];
+const purchasedGames = sessionStorage.getItem('games');
+const games = JSON.parse(purchasedGames);
+const totalSpentJSON = sessionStorage.getItem('totalSpent');
+const totalSpent = JSON.parse(totalSpentJSON);
 
 window.addEventListener('load', function()
 {
     let cartContainer = document.getElementById("cartContainer");
 
-    for (const game of Games)
+    for (const game of games)
     {
         let gameContainer = document.createElement("li");
         gameContainer.className = "cartItem";
@@ -25,4 +16,10 @@ window.addEventListener('load', function()
                                     <h4 class="value"> ${"$ " + game.price} </h4>`;
         cartContainer.append (gameContainer);
     }
+    
+    let totalSpentContainer = document.getElementById("totalSpentContainer");
+
+    let totalSpent = document.createElement("div")
+        totalSpent.innerHTML = `<h4> Estimated Total: </h4> <h4 class="value"> ${"$ " + totalSpentJSON} </h4>`;
+        totalSpentContainer.append(totalSpent);
 })

@@ -168,27 +168,25 @@ footer {
 }
 
 .value {
-  color: greenyellow;
+  color: rgb(0, 185, 15);
 }
 
 .cartContainer {
-  margin: 5%;
+  margin: 5% 15%;
 }
-
-.cartItemsContainer {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: flex-start;
+.cartContainer h4 {
+  text-align: end;
 }
 
 .cartItem {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  column-gap: normal;
 }
 .cartItem img {
+  padding: 1%;
   height: 320px;
   width: 320px;
 }
