@@ -47,15 +47,46 @@ function BuyGame(gameID)
 {
     for (let i = 0; i < Games.length; i++)
     {
-        if(Games[i].ID == gameID && Games[i].isAvailable)
+        if(Games[i].ID == gameID)
         {
-            Games[i].isAvailable = false;
+            if(Games[i].isAvailable)
+            {
+                Games[i].isAvailable = false;
 
-            UpdateTotalSpent(Games[i].price);
-            sessionStorage.setItem('totalSpent', totalSpent);
+                UpdateTotalSpent(Games[i].price);
+                sessionStorage.setItem('totalSpent', totalSpent);
 
-            purchasedGames.push(Games[i]);
-            sessionStorage.setItem('games', JSON.stringify(purchasedGames));
+                purchasedGames.push(Games[i]);
+                sessionStorage.setItem('games', JSON.stringify(purchasedGames));
+
+                Toastify({
+
+                    text: Games[i].name + " has been added to your cart.",
+        
+                    duration: 3000,
+        
+                    gravity: 'top',
+        
+                    position: 'right',
+                    style: {background: "gray"}
+        
+                }).showToast();
+            }
+            else
+            {
+                Toastify({
+
+                    text: Games[i].name + " is already in your cart.",
+        
+                    duration: 3000,
+        
+                    gravity: 'top',
+        
+                    position: 'right',
+                    style: {background: "gray"}
+        
+                }).showToast();
+            }
         }
     }
 }
