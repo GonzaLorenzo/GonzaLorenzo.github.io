@@ -1,0 +1,6 @@
+[
+    {"name": "Like a Dragon: Ishin!", "image":"../assets/img/Ishin.webp","description": "Don the clothes and weaponry of the elite to become the samurai of legend, Sakamoto Ryoma. Draw your blade and join the revolution in this heated historical adventure.", "price": 60, "ID": 1,"isAvailable": true},
+    {"name": "Borderlands 3", "image":"../assets/img/Borderlands3.jpg", "description": "The original shooter-looter returns, packing bazillions of guns and a mayhem-fueled adventure! Blast through new worlds and enemies as one of four new Vault Hunters.", "price": 50, "ID": 2, "isAvailable": true},
+    {"name": "Psychonauts 2", "image":"../assets/img/Psychonauts2.jpg", "description": "Combining quirky missions and mysterious conspiracies, Psychonauts 2 is a platform-adventure game with cinematic style and tons of customizable psychic powers.","price": 35, "ID": 3,  "isAvailable": true},
+    {"name": "Cuphead", "image":"../assets/img/CupheadY.jpg", "description": "Cuphead is a classic run and gun action game heavily focused on boss battles. Inspired by cartoons of the 1930s, the visuals and audio are created with the same techniques of the era.", "ID": 4, "price": 15, "isAvailable": true}
+]

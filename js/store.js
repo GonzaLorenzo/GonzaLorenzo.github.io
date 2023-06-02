@@ -1,49 +1,58 @@
 let totalSpent = 0;
+let Games = [];
 let purchasedGames = [];
-
-function Game(name, price, image, isAvailable)
-{
-    this.name = name;
-    this.price = price;
-    this.image = image;
-    this.isAvailable = isAvailable;
-}
-
-const Games = [
-    ishin = new Game("Like a Dragon: Ishin!", 60, "../assets/img/Ishin.webp", true),
-    borderlands3 = new Game("Borderlands 3", 50, "../assets/img/Borderlands3.jpg", true),
-    psychonauts2 = new Game("Psychonauts 2", 35, "../assets/img/Psychonauts2.jpg", true),
-    cuphead = new Game("Cuphead", 15, "../assets/img/CupheadY.jpg", true)
-];
 
 window.addEventListener('load', function()
 {
-    let ishinButton = document.getElementById("ishinButton");
-    ishinButton.onclick = () =>{BuyGame(ishin.name)}
-    let borderlands3Button = document.getElementById("borderlands3Button");
-    borderlands3Button.onclick = () =>{BuyGame(borderlands3.name)}
-    let psychonauts2Button = document.getElementById("psychonauts2Button");
-    psychonauts2Button.onclick = () =>{BuyGame(psychonauts2.name)}
-    let cupheadButton = document.getElementById("cupheadButton");
-    cupheadButton.onclick = () =>{BuyGame(cuphead.name)}
+    const gamesContainer = document.getElementById("storeGamesContainer");
+    fetch('../js/data.json')
+        .then( (res) => res.json())
+        .then( (res) => {
+            res.forEach((game) => {
+
+                Games = res;
+
+                const gameCard = document.createElement('div');
+                gameCard.className = "card col-xl-3 col-md-5 col-sm-12 border-0 h-100";
+                gameCard.innerHTML =    `<img src=${game.image} class="card-img-top storeCardImage" alt=${game.name}>
+                                        <div class="card-body border border-info ">
+                                            <h5 class="card-title">${game.name}</h5>
+                                            <p class="card-text">${game.description}</p>
+                                            <p class="value"> ${"$ " + game.price} </p>
+                                            <button id=${"buyButton" + game.ID} class="btn btn-primary">Buy</button>
+                                        </div>`;
+            
+                gamesContainer.append(gameCard);
+            });
+        })
 })
+
+ setTimeout(() => {
+    let ishinButton = document.getElementById("buyButton1");
+    ishinButton.onclick = () =>{BuyGame(1)}
+    let borderlands3Button = document.getElementById("buyButton2");
+    borderlands3Button.onclick = () =>{BuyGame(2)}
+    let psychonauts2Button = document.getElementById("buyButton3");
+    psychonauts2Button.onclick = () =>{BuyGame(3)}
+    let cupheadButton = document.getElementById("buyButton4");
+    cupheadButton.onclick = () =>{BuyGame(4)}
+    }, 500)
 
 function UpdateTotalSpent(gamePrice)
 {
     totalSpent += gamePrice;
 }
 
-function BuyGame(gameName)
+function BuyGame(gameID)
 {
     for (let i = 0; i < Games.length; i++)
     {
-        if(Games[i].name == gameName && Games[i].isAvailable)
+        if(Games[i].ID == gameID && Games[i].isAvailable)
         {
             Games[i].isAvailable = false;
 
             UpdateTotalSpent(Games[i].price);
             sessionStorage.setItem('totalSpent', totalSpent);
-            console.log(totalSpent);
 
             purchasedGames.push(Games[i]);
             sessionStorage.setItem('games', JSON.stringify(purchasedGames));
